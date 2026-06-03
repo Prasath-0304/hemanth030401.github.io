@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Hemanth Prasath - AI Engineer and Data Scientist. Get in touch for projects, collaborations, or inquiries.">
+  <title>Contact | Hemanth Prasath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading contact">
+    <div class="loader-core">
+      <span></span>
+      <p>Loading Contact</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="profile">
+      <div class="profile-image" aria-label="Profile image">
+        <img src="../assets/images/profile.png" alt="Hemanth Prasath" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <span style="display:none;">HP</span>
+        <div class="scan-line"></div>
+      </div>
+      <h2>Hemanth Prasath</h2>
+      <p>AI Engineer</p>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html"><i data-lucide="home"></i><span>Home</span></a>
+      <a href="../index.html#about"><i data-lucide="user-round"></i><span>About</span></a>
+      <a href="../index.html#skills"><i data-lucide="cpu"></i><span>Skills</span></a>
+      <a href="projects.html"><i data-lucide="folder-code"></i><span>Projects</span></a>
+      <a href="blog.html"><i data-lucide="file-text"></i><span>Blog</span></a>
+      <a href="freelance.html"><i data-lucide="briefcase-business"></i><span>Freelance</span></a>
+      <a href="contact.html" class="active"><i data-lucide="send"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="mailto:hemanrhprasath.hp@gmail.com">hemanrhprasath.hp@gmail.com</a>
+      <span>Chennai, Tamil Nadu</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's Build Something Intelligent</h2>
+        <p class="intro">Have a project in mind or want to collaborate? Reach out and let's discuss how AI and data science can transform your ideas into reality.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <div class="contact-card glass-card">
+            <i data-lucide="mail"></i>
+            <h3>Email</h3>
+            <a href="mailto:hemanrhprasath.hp@gmail.com">hemanrhprasath.hp@gmail.com</a>
+          </div>
+
+          <div class="contact-card glass-card">
+            <i data-lucide="github"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer">github.com/Prasath-0304</a>
+          </div>
+
+          <div class="contact-card glass-card">
+            <i data-lucide="linkedin"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/hemanth-prasath-342278200/" target="_blank" rel="noreferrer">linkedin.com/in/hemanth-prasath-342278200/</a>
+          </div>
+
+          <div class="contact-card glass-card">
+            <i data-lucide="map-pin"></i>
+            <h3>Location</h3>
+            <p>Chennai, Tamil Nadu, India</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form glass-card">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn primary"><i data-lucide="send"></i>Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright 2026 Hemanth Prasath. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/hemanth-prasath-342278200/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:hemanrhprasath.hp@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../content-loader.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

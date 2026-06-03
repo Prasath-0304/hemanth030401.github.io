@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium futuristic portfolio of Hemanth Prasath, Generative AI Engineer, Machine Learning Developer, and Data Scientist.">
+  <title>Hemanth Prasath | Generative AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading portfolio">
+    <div class="loader-core">
+      <span></span>
+      <p>Initializing AI Portfolio</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="profile">
+      <div class="profile-image" aria-label="Profile image">
+        <img src="assets/images/profile.png" alt="Hemanth Prasath" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <span style="display:none;">HP</span>
+        <div class="scan-line"></div>
+      </div>
+      <h2>Hemanth Prasath</h2>
+      <p>AI Engineer</p>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#home" class="active"><i data-lucide="home"></i><span>Home</span></a>
+      <a href="#about"><i data-lucide="user-round"></i><span>About</span></a>
+      <a href="#education"><i data-lucide="graduation-cap"></i><span>Education</span></a>
+      <a href="#skills"><i data-lucide="cpu"></i><span>Skills</span></a>
+      <a href="#projects"><i data-lucide="folder-code"></i><span>Projects</span></a>
+      <a href="#achievements"><i data-lucide="award"></i><span>Achievements</span></a>
+      <a href="#freelance"><i data-lucide="briefcase-business"></i><span>Freelance</span></a>
+      <a href="#contact"><i data-lucide="send"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="mailto:hemanrhprasath.hp@gmail.com">hemanrhprasath.hp@gmail.com</a>
+      <span>Chennai, Tamil Nadu</span>
+      <a href="admin/login.html" class="admin-gate" title="Admin Login"><i data-lucide="lock"></i></a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="home" class="hero section">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Generative AI Portfolio</p>
+          <h1>Hemanth Prasath</h1>
+          <h3>Generative AI Engineer | Machine Learning Developer | Data Scientist</h3>
+          <p class="intro">
+            I build intelligent systems that transform data into decisions: RAG applications, computer vision pipelines,
+            predictive analytics, and production-ready AI tools with a sharp focus on measurable business value.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="assets/resume.pdf" download><i data-lucide="download"></i>Resume</a>
+            <a class="btn secondary" href="#contact"><i data-lucide="handshake"></i>Hire Me</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="ai-orbit">
+            <div class="orbit-ring ring-one"></div>
+            <div class="orbit-ring ring-two"></div>
+            <div class="orbit-ring ring-three"></div>
+            <div class="core-chip">
+              <i data-lucide="brain-circuit"></i>
+              <span>AI</span>
+            </div>
+          </div>
+          <div class="mini-graph" aria-label="Animated analytics graph">
+            <span style="--height: 46%"></span>
+            <span style="--height: 68%"></span>
+            <span style="--height: 38%"></span>
+            <span style="--height: 82%"></span>
+            <span style="--height: 58%"></span>
+            <span style="--height: 92%"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid reveal">
+        <article class="stat-card">
+          <i data-lucide="layers-3"></i>
+          <strong data-counter="25">0</strong>
+          <span>AI/ML Builds</span>
+        </article>
+        <article class="stat-card">
+          <i data-lucide="scan-eye"></i>
+          <strong data-counter="10">0</strong>
+          <span>CV Pipelines</span>
+        </article>
+        <article class="stat-card">
+          <i data-lucide="database-zap"></i>
+          <strong data-counter="15">0</strong>
+          <span>Analytics Dashboards</span>
+        </article>
+        <article class="stat-card">
+          <i data-lucide="sparkles"></i>
+          <strong data-counter="6">0</strong>
+          <span>GenAI Solutions</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">About</p>
+        <h2>Building AI that is useful, scalable, and explainable.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <p>
+            Hemanth Prasath is a Generative AI Engineer, Machine Learning Developer, and Data Scientist specializing in
+            end-to-end ML workflows. His work spans model development, computer vision, retrieval augmented generation,
+            data visualization, and deployment-focused AI applications.
+          </p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="radar-chart">
+            <div class="radar-grid"></div>
+            <span class="radar-label l1">GenAI</span>
+            <span class="radar-label l2">ML</span>
+            <span class="radar-label l3">CV</span>
+            <span class="radar-label l4">BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Academic timeline</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="glass-card">
+            <h3>BCA</h3>
+            <p>Built a foundation in programming, databases, web technologies, and core computer science concepts.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="glass-card">
+            <h3>M.Sc Computer Science</h3>
+            <p>Advanced study in algorithms, data systems, software engineering, analytics, and applied computing.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="glass-card">
+            <h3>M.Tech CSE</h3>
+            <p>SRM Institute focus on advanced computer science, AI systems, and modern engineering practices.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical capabilities</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><i data-lucide="code-2"></i><span>Python</span></article>
+        <article class="skill-card reveal"><i data-lucide="database"></i><span>SQL</span></article>
+        <article class="skill-card reveal"><i data-lucide="network"></i><span>TensorFlow</span></article>
+        <article class="skill-card reveal"><i data-lucide="flame"></i><span>PyTorch</span></article>
+        <article class="skill-card reveal"><i data-lucide="scan-search"></i><span>YOLOv8</span></article>
+        <article class="skill-card reveal"><i data-lucide="smartphone"></i><span>MobileNetV2</span></article>
+        <article class="skill-card reveal"><i data-lucide="git-branch"></i><span>MLflow</span></article>
+        <article class="skill-card reveal"><i data-lucide="panel-top"></i><span>Streamlit</span></article>
+        <article class="skill-card reveal"><i data-lucide="bar-chart-3"></i><span>Power BI</span></article>
+        <article class="skill-card reveal"><i data-lucide="messages-square"></i><span>RAG</span></article>
+        <article class="skill-card reveal"><i data-lucide="text-search"></i><span>NLP</span></article>
+        <article class="skill-card reveal"><i data-lucide="eye"></i><span>Computer Vision</span></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected AI and analytics work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="scan-eye"></i><span>Computer Vision</span></div>
+          <h3>SmartVision AI</h3>
+          <p>AI vision system for object detection, monitoring, and intelligent scene analysis using deep learning pipelines.</p>
+          <div class="stack"><span>YOLOv8</span><span>Python</span><span>OpenCV</span></div>
+          <div class="project-actions"><a href="#" class="btn ghost">GitHub</a><a href="#" class="btn ghost">Live Demo</a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="shield-check"></i><span>AI Monitoring</span></div>
+          <h3>PatrolIQ</h3>
+          <p>Smart patrol intelligence platform for surveillance workflows, anomaly detection, and operational reporting.</p>
+          <div class="stack"><span>Python</span><span>CV</span><span>Analytics</span></div>
+          <div class="project-actions"><a href="#" class="btn ghost">GitHub</a><a href="#" class="btn ghost">Live Demo</a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="calculator"></i><span>Predictive ML</span></div>
+          <h3>EmiPredict AI</h3>
+          <p>Machine learning solution for EMI prediction with feature engineering, model evaluation, and explainable outputs.</p>
+          <div class="stack"><span>Scikit-learn</span><span>MLflow</span><span>Streamlit</span></div>
+          <div class="project-actions"><a href="#" class="btn ghost">GitHub</a><a href="#" class="btn ghost">Live Demo</a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="shopping-bag"></i><span>Data Analytics</span></div>
+          <h3>Amazon India Sales Analytics</h3>
+          <p>Sales intelligence dashboard for trend discovery, regional performance, category insights, and business decisions.</p>
+          <div class="stack"><span>Power BI</span><span>SQL</span><span>Python</span></div>
+          <div class="project-actions"><a href="#" class="btn ghost">GitHub</a><a href="#" class="btn ghost">Live Demo</a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="activity"></i><span>Live Stats</span></div>
+          <h3>CricBuzz LiveStats</h3>
+          <p>Real-time cricket analytics interface for live score tracking, match summaries, and performance visualization.</p>
+          <div class="stack"><span>JavaScript</span><span>API</span><span>Charts</span></div>
+          <div class="project-actions"><a href="#" class="btn ghost">GitHub</a><a href="#" class="btn ghost">Live Demo</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Achievements</p>
+        <h2>Credentials and milestones</h2>
+      </div>
+      <div class="achievement-grid">
+        <article class="glass-card achievement-card reveal"><i data-lucide="badge-check"></i><h3>AI/ML Developer Certification</h3><p>GUVI HCL certification in applied artificial intelligence and machine learning development.</p></article>
+        <article class="glass-card achievement-card reveal"><i data-lucide="graduation-cap"></i><h3>M.Tech CSE</h3><p>Advanced academic track in computer science engineering at SRM Institute.</p></article>
+        <article class="glass-card achievement-card reveal"><i data-lucide="workflow"></i><h3>Machine Learning Projects</h3><p>Delivered predictive models, analytics workflows, and deployment-ready ML applications.</p></article>
+        <article class="glass-card achievement-card reveal"><i data-lucide="camera"></i><h3>Computer Vision Projects</h3><p>Built vision pipelines for detection, recognition, monitoring, and intelligent automation.</p></article>
+      </div>
+    </section>
+
+    <section id="freelance" class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Freelance</p>
+        <h2>Services for startups, teams, and founders</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal"><i data-lucide="brain"></i><h3>AI Development</h3></article>
+        <article class="service-card reveal"><i data-lucide="bot"></i><h3>Machine Learning</h3></article>
+        <article class="service-card reveal"><i data-lucide="chart-no-axes-combined"></i><h3>Data Analytics</h3></article>
+        <article class="service-card reveal"><i data-lucide="file-code-2"></i><h3>Python Development</h3></article>
+        <article class="service-card reveal"><i data-lucide="scan-line"></i><h3>Computer Vision</h3></article>
+        <article class="service-card reveal"><i data-lucide="layout-dashboard"></i><h3>Dashboard Development</h3></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something intelligent.</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:hemanrhprasath.hp@gmail.com"><i data-lucide="mail"></i><span>Email</span><strong>hemanrhprasath.hp@gmail.com</strong></a>
+        <a class="contact-card reveal" href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer"><i data-lucide="github"></i><span>GitHub</span><strong>github.com/Prasath-0304</strong></a>
+        <a class="contact-card reveal" href="https://www.linkedin.com/in/hemanth-prasath-342278200/" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i><span>LinkedIn</span><strong>linkedin.com/in/hemanth-prasath-342278200/</strong></a>
+        <div class="contact-card reveal"><i data-lucide="map-pin"></i><span>Location</span><strong>Chennai, Tamil Nadu</strong></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright 2026 Hemanth Prasath. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:hemanrhprasath.hp@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="content-loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freelance services by Hemanth Prasath - AI Engineer and Data Scientist. Machine learning, computer vision, data analytics, and Python development services.">
+  <title>Freelance Services | Hemanth Prasath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading services">
+    <div class="loader-core">
+      <span></span>
+      <p>Loading Services</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="profile">
+      <div class="profile-image" aria-label="Profile image">
+        <img src="../assets/images/profile.png" alt="Hemanth Prasath" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <span style="display:none;">HP</span>
+        <div class="scan-line"></div>
+      </div>
+      <h2>Hemanth Prasath</h2>
+      <p>AI Engineer</p>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html"><i data-lucide="home"></i><span>Home</span></a>
+      <a href="../index.html#about"><i data-lucide="user-round"></i><span>About</span></a>
+      <a href="../index.html#skills"><i data-lucide="cpu"></i><span>Skills</span></a>
+      <a href="projects.html"><i data-lucide="folder-code"></i><span>Projects</span></a>
+      <a href="blog.html"><i data-lucide="file-text"></i><span>Blog</span></a>
+      <a href="freelance.html" class="active"><i data-lucide="briefcase-business"></i><span>Freelance</span></a>
+      <a href="contact.html"><i data-lucide="send"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="mailto:hemanrhprasath.hp@gmail.com">hemanrhprasath.hp@gmail.com</a>
+      <span>Chennai, Tamil Nadu</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Freelance Services</p>
+        <h2>Build Intelligent Solutions</h2>
+        <p class="intro">Professional AI, machine learning, and data science services for startups, businesses, and teams looking to leverage the power of data and automation.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <i data-lucide="brain"></i>
+          <h3>AI Development</h3>
+          <p>Custom AI solutions including chatbots, recommendation systems, and intelligent automation using cutting-edge technologies.</p>
+          <span class="service-price">Starting at $500</span>
+        </article>
+
+        <article class="service-card reveal">
+          <i data-lucide="bot"></i>
+          <h3>Machine Learning</h3>
+          <p>End-to-end ML pipeline development from data preprocessing to model deployment with monitoring and maintenance.</p>
+          <span class="service-price">Starting at $800</span>
+        </article>
+
+        <article class="service-card reveal">
+          <i data-lucide="chart-no-axes-combined"></i>
+          <h3>Data Analytics</h3>
+          <p>Comprehensive data analysis, visualization dashboards, and actionable insights to drive business decisions.</p>
+          <span class="service-price">Starting at $400</span>
+        </article>
+
+        <article class="service-card reveal">
+          <i data-lucide="file-code-2"></i>
+          <h3>Python Development</h3>
+          <p>Robust Python applications, automation scripts, API integrations, and backend development services.</p>
+          <span class="service-price">Starting at $300</span>
+        </article>
+
+        <article class="service-card reveal">
+          <i data-lucide="scan-line"></i>
+          <h3>Computer Vision</h3>
+          <p>Object detection, image classification, facial recognition, and video analysis solutions for various industries.</p>
+          <span class="service-price">Starting at $600</span>
+        </article>
+
+        <article class="service-card reveal">
+          <i data-lucide="layout-dashboard"></i>
+          <h3>Dashboard Development</h3>
+          <p>Interactive dashboards using Streamlit, Power BI, or custom web solutions for real-time data monitoring.</p>
+          <span class="service-price">Starting at $350</span>
+        </article>
+      </div>
+
+      <div class="pricing-section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Pricing</p>
+          <h2>Flexible Plans</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card glass-card">
+            <h3>Starter</h3>
+            <div class="price"><span>$</span>500<span>/project</span></div>
+            <ul>
+              <li><i data-lucide="check"></i>Single ML model</li>
+              <li><i data-lucide="check"></i>Basic data preprocessing</li>
+              <li><i data-lucide="check"></i>Model documentation</li>
+              <li><i data-lucide="check"></i>1 revision round</li>
+            </ul>
+            <a href="contact.html" class="btn secondary">Get Started</a>
+          </article>
+
+          <article class="pricing-card glass-card featured">
+            <div class="popular-badge">Popular</div>
+            <h3>Professional</h3>
+            <div class="price"><span>$</span>1,500<span>/project</span></div>
+            <ul>
+              <li><i data-lucide="check"></i>Complete ML pipeline</li>
+              <li><i data-lucide="check"></i>Advanced feature engineering</li>
+              <li><i data-lucide="check"></i>Deployment support</li>
+              <li><i data-lucide="check"></i>Performance monitoring</li>
+              <li><i data-lucide="check"></i>2 revision rounds</li>
+            </ul>
+            <a href="contact.html" class="btn primary">Get Started</a>
+          </article>
+
+          <article class="pricing-card glass-card">
+            <h3>Enterprise</h3>
+            <div class="price"><span>$</span>3,000<span>/project</span></div>
+            <ul>
+              <li><i data-lucide="check"></i>Custom AI solutions</li>
+              <li><i data-lucide="check"></i>Full system integration</li>
+              <li><i data-lucide="check"></i>Scalable architecture</li>
+              <li><i data-lucide="check"></i>Ongoing support</li>
+              <li><i data-lucide="check"></i>Unlimited revisions</li>
+            </ul>
+            <a href="contact.html" class="btn secondary">Get Started</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="contact-cta reveal">
+        <div class="glass-card">
+          <h3>Ready to Start Your Project?</h3>
+          <p>Let's discuss how I can help bring your AI and data science ideas to life. Get in touch for a free consultation.</p>
+          <a href="contact.html" class="btn primary"><i data-lucide="send"></i>Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright 2026 Hemanth Prasath. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/hemanth-prasath-342278200/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:hemanrhprasath.hp@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../content-loader.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
