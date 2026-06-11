@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Hemanth Prasath - AI Engineer and Data Scientist. Explore SmartVision AI, PatrolIQ, EmiPredict AI, and more.">
+  <title>Projects | Hemanth Prasath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading projects">
+    <div class="loader-core">
+      <span></span>
+      <p>Loading Projects</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="profile">
+      <div class="profile-image" aria-label="Profile image">
+        <img src="../assets/images/ChatGPT Image Jun 4, 2026, 03_37_11 AM.png" alt="Hemanth Prasath" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <span style="display:none;">HP</span>
+        <div class="scan-line"></div>
+      </div>
+      <h2>Hemanth Prasath</h2>
+      <p>AI Engineer</p>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html"><i data-lucide="home"></i><span>Home</span></a>
+      <a href="../index.html#about"><i data-lucide="user-round"></i><span>About</span></a>
+      <a href="../index.html#skills"><i data-lucide="cpu"></i><span>Skills</span></a>
+      <a href="projects.html" class="active"><i data-lucide="folder-code"></i><span>Projects</span></a>
+      <a href="blog.html"><i data-lucide="file-text"></i><span>Blog</span></a>
+      <a href="freelance.html"><i data-lucide="briefcase-business"></i><span>Freelance</span></a>
+      <a href="contact.html"><i data-lucide="send"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="mailto:hemanrhprasath.hp@gmail.com">hemanrhprasath.hp@gmail.com</a>
+      <span>Chennai, Tamil Nadu</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>AI and Data Science Portfolio</h2>
+        <p class="intro">Production-ready machine learning systems, computer vision pipelines, and intelligent analytics solutions.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="scan-eye"></i><span>Computer Vision</span></div>
+          <h3>SmartVision AI</h3>
+          <p>Advanced AI vision system for real-time object detection, monitoring, and intelligent scene analysis using deep learning pipelines. Deployed YOLOv8 for high-accuracy detection with optimized inference.</p>
+          <div class="stack"><span>YOLOv8</span><span>Python</span><span>OpenCV</span><span>PyTorch</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" class="btn ghost"><i data-lucide="github"></i>GitHub</a>
+            <a href="#" class="btn ghost"><i data-lucide="external-link"></i>Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="shield-check"></i><span>AI Monitoring</span></div>
+          <h3>PatrolIQ</h3>
+          <p>Smart patrol intelligence platform for surveillance workflows, anomaly detection, and operational reporting. Integrates computer vision with alert systems for automated security monitoring.</p>
+          <div class="stack"><span>Python</span><span>Computer Vision</span><span>Analytics</span><span>TensorFlow</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" class="btn ghost"><i data-lucide="github"></i>GitHub</a>
+            <a href="#" class="btn ghost"><i data-lucide="external-link"></i>Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="calculator"></i><span>Predictive ML</span></div>
+          <h3>EmiPredict AI</h3>
+          <p>Machine learning solution for EMI prediction with feature engineering, model evaluation, and explainable outputs. Built with Scikit-learn and deployed via Streamlit for interactive predictions.</p>
+          <div class="stack"><span>Scikit-learn</span><span>MLflow</span><span>Streamlit</span><span>Pandas</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" class="btn ghost"><i data-lucide="github"></i>GitHub</a>
+            <a href="#" class="btn ghost"><i data-lucide="external-link"></i>Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="shopping-bag"></i><span>Data Analytics</span></div>
+          <h3>Amazon India Sales Analytics</h3>
+          <p>Comprehensive sales intelligence dashboard for trend discovery, regional performance, category insights, and business decisions. Built with Power BI and SQL for actionable analytics.</p>
+          <div class="stack"><span>Power BI</span><span>SQL</span><span>Python</span><span>Excel</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" class="btn ghost"><i data-lucide="github"></i>GitHub</a>
+            <a href="#" class="btn ghost"><i data-lucide="external-link"></i>Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="activity"></i><span>Live Stats</span></div>
+          <h3>CricBuzz LiveStats</h3>
+          <p>Real-time cricket analytics interface for live score tracking, match summaries, and performance visualization. Integrates with live APIs for dynamic data updates and interactive charts.</p>
+          <div class="stack"><span>JavaScript</span><span>API</span><span>Charts</span><span>React</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" class="btn ghost"><i data-lucide="github"></i>GitHub</a>
+            <a href="#" class="btn ghost"><i data-lucide="external-link"></i>Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><i data-lucide="brain-circuit"></i><span>Generative AI</span></div>
+          <h3>RAG Chat Assistant</h3>
+          <p>Retrieval-Augmented Generation chatbot for document Q&A with vector embeddings and LLM integration. Supports PDF processing, semantic search, and context-aware responses.</p>
+          <div class="stack"><span>LangChain</span><span>OpenAI</span><span>Pinecone</span><span>Python</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" class="btn ghost"><i data-lucide="github"></i>GitHub</a>
+            <a href="#" class="btn ghost"><i data-lucide="external-link"></i>Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright 2026 Hemanth Prasath. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Prasath-0304" target="blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/hemanth-prasath-342278200/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:hemanrhprasath.hp@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../content-loader.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

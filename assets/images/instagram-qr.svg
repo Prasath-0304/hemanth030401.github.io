@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Instagram QR for Hemanth Prasath</title>
+  <desc id="desc">Decorative Instagram QR-style card. Click the website Instagram button to open the profile.</desc>
+  <defs>
+    <linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a3d"/>
+      <stop offset=".45" stop-color="#df4d72"/>
+      <stop offset="1" stop-color="#b419c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" rx="48" fill="#fff"/>
+  <g fill="url(#ig)">
+    <rect x="90" y="90" width="160" height="160" rx="38"/>
+    <rect x="650" y="90" width="160" height="160" rx="38"/>
+    <rect x="90" y="650" width="160" height="160" rx="38"/>
+    <circle cx="170" cy="170" r="42" fill="#fff"/>
+    <circle cx="730" cy="170" r="42" fill="#fff"/>
+    <circle cx="170" cy="730" r="42" fill="#fff"/>
+    <rect x="370" y="370" width="160" height="160" rx="42"/>
+    <circle cx="450" cy="450" r="42" fill="#fff"/>
+    <circle cx="508" cy="392" r="16" fill="#fff"/>
+  </g>
+  <g fill="url(#ig)">
+    <circle cx="310" cy="105" r="12"/><circle cx="350" cy="105" r="12"/><circle cx="390" cy="105" r="12"/><circle cx="430" cy="105" r="12"/><circle cx="510" cy="105" r="12"/><circle cx="550" cy="105" r="12"/><circle cx="590" cy="105" r="12"/>
+    <circle cx="310" cy="145" r="12"/><circle cx="390" cy="145" r="12"/><circle cx="470" cy="145" r="12"/><circle cx="550" cy="145" r="12"/><circle cx="630" cy="145" r="12"/>
+    <circle cx="290" cy="190" r="12"/><circle cx="330" cy="190" r="12"/><circle cx="410" cy="190" r="12"/><circle cx="450" cy="190" r="12"/><circle cx="530" cy="190" r="12"/><circle cx="570" cy="190" r="12"/><circle cx="610" cy="190" r="12"/>
+    <circle cx="305" cy="235" r="12"/><circle cx="365" cy="235" r="12"/><circle cx="425" cy="235" r="12"/><circle cx="485" cy="235" r="12"/><circle cx="545" cy="235" r="12"/><circle cx="605" cy="235" r="12"/>
+    <circle cx="115" cy="310" r="12"/><circle cx="155" cy="310" r="12"/><circle cx="235" cy="310" r="12"/><circle cx="275" cy="310" r="12"/><circle cx="355" cy="310" r="12"/><circle cx="435" cy="310" r="12"/><circle cx="515" cy="310" r="12"/><circle cx="595" cy="310" r="12"/><circle cx="675" cy="310" r="12"/><circle cx="755" cy="310" r="12"/>
+    <circle cx="135" cy="350" r="12"/><circle cx="215" cy="350" r="12"/><circle cx="295" cy="350" r="12"/><circle cx="335" cy="350" r="12"/><circle cx="415" cy="350" r="12"/><circle cx="495" cy="350" r="12"/><circle cx="575" cy="350" r="12"/><circle cx="655" cy="350" r="12"/><circle cx="735" cy="350" r="12"/><circle cx="815" cy="350" r="12"/>
+    <circle cx="95" cy="410" r="12"/><circle cx="175" cy="410" r="12"/><circle cx="255" cy="410" r="12"/><circle cx="315" cy="410" r="12"/><circle cx="585" cy="410" r="12"/><circle cx="645" cy="410" r="12"/><circle cx="725" cy="410" r="12"/><circle cx="805" cy="410" r="12"/>
+    <circle cx="115" cy="470" r="12"/><circle cx="195" cy="470" r="12"/><circle cx="275" cy="470" r="12"/><circle cx="335" cy="470" r="12"/><circle cx="565" cy="470" r="12"/><circle cx="625" cy="470" r="12"/><circle cx="705" cy="470" r="12"/><circle cx="785" cy="470" r="12"/>
+    <circle cx="135" cy="530" r="12"/><circle cx="215" cy="530" r="12"/><circle cx="295" cy="530" r="12"/><circle cx="375" cy="530" r="12"/><circle cx="455" cy="530" r="12"/><circle cx="535" cy="530" r="12"/><circle cx="615" cy="530" r="12"/><circle cx="695" cy="530" r="12"/><circle cx="775" cy="530" r="12"/>
+    <circle cx="95" cy="590" r="12"/><circle cx="175" cy="590" r="12"/><circle cx="255" cy="590" r="12"/><circle cx="335" cy="590" r="12"/><circle cx="415" cy="590" r="12"/><circle cx="495" cy="590" r="12"/><circle cx="575" cy="590" r="12"/><circle cx="655" cy="590" r="12"/><circle cx="735" cy="590" r="12"/><circle cx="815" cy="590" r="12"/>
+    <circle cx="310" cy="675" r="12"/><circle cx="350" cy="675" r="12"/><circle cx="430" cy="675" r="12"/><circle cx="510" cy="675" r="12"/><circle cx="590" cy="675" r="12"/><circle cx="670" cy="675" r="12"/>
+    <circle cx="310" cy="735" r="12"/><circle cx="390" cy="735" r="12"/><circle cx="470" cy="735" r="12"/><circle cx="550" cy="735" r="12"/><circle cx="630" cy="735" r="12"/><circle cx="710" cy="735" r="12"/>
+  </g>
+  <text x="450" y="860" text-anchor="middle" fill="url(#ig)" font-family="Arial, sans-serif" font-size="54" font-weight="800">HEMANTH_PRASATH</text>
+</svg>

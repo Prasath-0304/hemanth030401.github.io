@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog by Hemanth Prasath - AI Engineer and Data Scientist. Articles on machine learning, computer vision, and AI development.">
+  <title>Blog | Hemanth Prasath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading blog">
+    <div class="loader-core">
+      <span></span>
+      <p>Loading Blog</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="profile">
+      <div class="profile-image" aria-label="Profile image">
+        <img src="../assets/images/ChatGPT Image Jun 4, 2026, 03_37_11 AM.png" alt="Hemanth Prasath" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <span style="display:none;">HP</span>
+        <div class="scan-line"></div>
+      </div>
+      <h2>Hemanth Prasath</h2>
+      <p>AI Engineer</p>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html"><i data-lucide="home"></i><span>Home</span></a>
+      <a href="../index.html#about"><i data-lucide="user-round"></i><span>About</span></a>
+      <a href="../index.html#skills"><i data-lucide="cpu"></i><span>Skills</span></a>
+      <a href="projects.html"><i data-lucide="folder-code"></i><span>Projects</span></a>
+      <a href="blog.html" class="active"><i data-lucide="file-text"></i><span>Blog</span></a>
+      <a href="freelance.html"><i data-lucide="briefcase-business"></i><span>Freelance</span></a>
+      <a href="contact.html"><i data-lucide="send"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="mailto:hemanrhprasath.hp@gmail.com">hemanrhprasath.hp@gmail.com</a>
+      <span>Chennai, Tamil Nadu</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Blog</p>
+        <h2>Insights on AI & Data Science</h2>
+        <p class="intro">Thoughts, tutorials, and insights on machine learning, computer vision, and building production AI systems.</p>
+      </div>
+
+      <div class="search-bar reveal">
+        <input type="text" placeholder="Search articles..." class="search-input">
+        <i data-lucide="search" class="search-icon"></i>
+      </div>
+
+      <div class="featured-article reveal">
+        <article class="glass-card featured-card">
+          <div class="featured-badge"><i data-lucide="sparkles"></i><span>Featured</span></div>
+          <h3>Building Production-Ready Computer Vision Systems with YOLOv8</h3>
+          <p>A comprehensive guide to deploying YOLOv8 models in production environments, covering optimization techniques, inference pipelines, and real-world deployment strategies for object detection systems.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>January 15, 2026</span>
+            <span><i data-lucide="clock"></i>8 min read</span>
+            <span><i data-lucide="tag"></i>Computer Vision</span>
+          </div>
+          <a href="#" class="btn primary">Read Article</a>
+        </article>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card glass-card reveal">
+          <div class="blog-category"><i data-lucide="brain-circuit"></i><span>Machine Learning</span></div>
+          <h3>Introduction to Retrieval-Augmented Generation (RAG)</h3>
+          <p>Understanding the fundamentals of RAG systems, how they combine retrieval with generation, and practical implementations using LangChain and vector databases.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>January 10, 2026</span>
+            <span><i data-lucide="clock"></i>6 min read</span>
+          </div>
+          <a href="#" class="btn ghost">Read More</a>
+        </article>
+
+        <article class="blog-card glass-card reveal">
+          <div class="blog-category"><i data-lucide="bar-chart-3"></i><span>Data Analytics</span></div>
+          <h3>Building Interactive Dashboards with Streamlit</h3>
+          <p>A step-by-step tutorial on creating beautiful, interactive data science dashboards using Streamlit, from data loading to deployment.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>January 5, 2026</span>
+            <span><i data-lucide="clock"></i>5 min read</span>
+          </div>
+          <a href="#" class="btn ghost">Read More</a>
+        </article>
+
+        <article class="blog-card glass-card reveal">
+          <div class="blog-category"><i data-lucide="scan-eye"></i><span>Computer Vision</span></div>
+          <h3>Object Detection Best Practices</h3>
+          <p>Key considerations and best practices when building object detection systems, including data preparation, model selection, and evaluation metrics.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>December 28, 2025</span>
+            <span><i data-lucide="clock"></i>7 min read</span>
+          </div>
+          <a href="#" class="btn ghost">Read More</a>
+        </article>
+
+        <article class="blog-card glass-card reveal">
+          <div class="blog-category"><i data-lucide="git-branch"></i><span>MLOps</span></div>
+          <h3>MLflow for Model Lifecycle Management</h3>
+          <p>How to use MLflow to track experiments, manage models, and deploy machine learning pipelines in a production environment.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>December 20, 2025</span>
+            <span><i data-lucide="clock"></i>6 min read</span>
+          </div>
+          <a href="#" class="btn ghost">Read More</a>
+        </article>
+
+        <article class="blog-card glass-card reveal">
+          <div class="blog-category"><i data-lucide="database"></i><span>Deep Learning</span></div>
+          <h3>PyTorch vs TensorFlow: A Practical Comparison</h3>
+          <p>A practical comparison of PyTorch and TensorFlow for deep learning projects, focusing on ease of use, performance, and ecosystem support.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>December 15, 2025</span>
+            <span><i data-lucide="clock"></i>8 min read</span>
+          </div>
+          <a href="#" class="btn ghost">Read More</a>
+        </article>
+
+        <article class="blog-card glass-card reveal">
+          <div class="blog-category"><i data-lucide="smartphone"></i><span>Mobile AI</span></div>
+          <h3>Deploying ML Models on Mobile Devices</h3>
+          <p>Techniques for optimizing and deploying machine learning models on mobile devices using TensorFlow Lite and ONNX for edge AI applications.</p>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i>December 10, 2025</span>
+            <span><i data-lucide="clock"></i>7 min read</span>
+          </div>
+          <a href="#" class="btn ghost">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright 2026 Hemanth Prasath. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Prasath-0304" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/hemanth-prasath-342278200/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:hemanrhprasath.hp@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../content-loader.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

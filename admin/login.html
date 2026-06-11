@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Owner Login | Hemanth Prasath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="login-body">
+  <main class="login-card glass-card">
+    <img src="../assets/images/ChatGPT Image Jun 4, 2026, 03_37_11 AM.png" alt="AI dashboard portrait">
+    <p class="eyebrow">Owner Gate</p>
+    <h1>Dashboard Login</h1>
+    <p class="intro">Use the owner credentials to edit local portfolio content, theme, projects, and contact links.</p>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn primary" type="submit">Login</button>
+      <a class="btn secondary" href="../index.html">Back to Site</a>
+    </form>
+  </main>
+  <script src="../script.js"></script>
+  <script>
+    (function () {
+      var allowedEmails = [
+        "hemanrhprasath.hp@gmail.com",
+        "hemanthprasath.hp@gmail.com"
+      ];
+      var allowedPassword = "Pr@s@th0304";
+      var form = document.getElementById("loginForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value.trim().toLowerCase();
+        var password = document.getElementById("password").value.trim();
+
+        if (allowedEmails.indexOf(email) !== -1 && password === allowedPassword) {
+          try {
+            localStorage.setItem("adminLoggedIn", "true");
+            localStorage.setItem("adminEmail", email);
+            sessionStorage.setItem("adminLoggedIn", "true");
+            sessionStorage.setItem("adminEmail", email);
+          } catch (error) {
+            sessionStorage.setItem("adminLoggedIn", "true");
+            sessionStorage.setItem("adminEmail", email);
+          }
+          window.location.href = "./dashboard.html";
+          return;
+        }
+
+        alert("Invalid credentials. Please check email and password exactly.");
+      });
+    })();
+  </script>
+</body>
+</html>
